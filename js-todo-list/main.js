@@ -20,13 +20,13 @@ window.addEventListener("DOMContentLoaded",function(){
     button.classList.add('close')
     button.innerHTML = "x"
     li.insertAdjacentElement('beforeend',button)
-    if (value != '') {
+    if (value.value != '') {
     document.querySelector('ul').insertAdjacentElement('beforeend',li)
     }
     li.querySelector('.close').addEventListener('click',function(even){
       even.target.parentNode.remove()
     })
-    value.value= ""
+    value.value=""
   })
   
 })
